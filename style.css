@@ -698,8 +698,8 @@ nav .container {
 }
 
 .cv-header .profile-img {
-  width: 160px;
-  height: 160px;
+  width: 300px;
+  height: 300px;
   margin-bottom: 25px;
 }
 
@@ -715,6 +715,20 @@ nav .container {
 
 .cv-section {
   animation: fadeIn 0.8s ease-out;
+}
+
+.cv-data-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.cv-data-column .cv-item {
+  margin-bottom: 20px;
+}
+
+.cv-data-column .cv-item:last-child {
+  margin-bottom: 0;
 }
 
 .cv-section-title {
@@ -937,6 +951,33 @@ nav .container {
   transform: translateX(5px);
 }
 
+/* ==================== FOOTER ==================== */
+.site-footer {
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.08), rgba(124, 58, 237, 0.08));
+  padding: 25px 0;
+  color: var(--text-dark);
+}
+
+.site-footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+  color: var(--text-gray);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .site-footer .container {
+    padding: 0 20px;
+  }
+}
+
 /* ==================== DESAIN RESPONSIF ==================== */
 @media (max-width: 768px) {
   .hamburger {
@@ -976,6 +1017,11 @@ nav .container {
 
   .nav-menu li:last-child {
     border-bottom: none;
+  }
+
+  .cv-data-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .nav-menu a {
