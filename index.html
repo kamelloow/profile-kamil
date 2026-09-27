@@ -13,13 +13,17 @@
     <div class="container">
       <a href="index.html" class="nav-brand">Kamil</a>
       <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="portofolio.html">Portfolio</a></li>
-        <li><a href="cv.html">CV</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="portofolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+        <li><a href="cv.html" data-i18n="nav.cv">CV</a></li>
       </ul>
-      <div class="hamburger">
+      <div class="lang-switch" aria-label="Language switcher">
+        <button class="lang-btn active" data-lang="id" type="button">ID</button>
+        <button class="lang-btn" data-lang="en" type="button">EN</button>
+      </div>
+      <div class="hamburger" aria-label="Open menu">
         <span></span>
         <span></span>
         <span></span>
@@ -31,22 +35,22 @@
   <section class="section">
     <div class="container">
       <div class="hero-content">
-        <img src="https://i.ibb.co.com/vxZS2JZN/Whats-App-Image-2026-04-15-at-09-50-17.jpg" alt="Fedya Jalilah Kamil Winola" class="profile-img">
+        <img src="https://i.ibb.co.com/Y7mCXqMb/Screenshot-2026-09-27-215246.png" alt="Fedya Jalilah Kamil Winola" class="profile-img">
         <h1>Fedya Jalilah Kamil Winola</h1>
-        <p class="nickname">Panggilan: <strong>Kamil</strong></p>
-        <p class="tagline">Creative Student | Passionate in Web Development & UI/UX</p>
-        <p class="description">
+        <p class="nickname"><span data-i18n="hero.call">Panggilan:</span> <strong>Kamil</strong></p>
+        <p class="tagline" data-i18n="hero.tagline">Creative Student | Passionate in Web Development & UI/UX</p>
+        <p class="description" data-i18n="hero.description">
           Saya adalah seorang pelajar SMK jurusan SIJA yang bersemangat dalam pengembangan web dan desain UI/UX. Dengan pengetahuan tentang HTML, CSS, JavaScript, dan tools desain seperti Figma, saya siap menciptakan pengalaman digital yang menarik dan fungsional.
         </p>
-        <a href="cv.html" class="cta-button">Hubungi Saya</a>
+        <a href="cv.html" class="cta-button" data-i18n="hero.cta">Hubungi Saya</a>
       </div>
     </div>
   </section>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 2026 Fedya Jalilah Kamil Winola. Semua hak dilindungi.</p>
-      <p>Desain oleh Kamil.</p>
+      <p data-i18n="footer.copy">© 2026 Fedya Jalilah Kamil Winola. Semua hak dilindungi.</p>
+      <p data-i18n="footer.design">Desain oleh Kamil.</p>
     </div>
   </footer>
 

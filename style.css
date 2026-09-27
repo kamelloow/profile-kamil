@@ -103,6 +103,36 @@ nav .container {
   margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
+  gap: 20px;
+}
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px;
+  background: rgba(167, 139, 250, 0.08);
+  border: 1px solid rgba(124, 58, 237, 0.15);
+  border-radius: 999px;
+  margin-left: auto;
+}
+
+.lang-btn {
+  border: none;
+  background: transparent;
+  color: var(--text-dark);
+  font-weight: 600;
+  font-size: 0.78rem;
+  padding: 7px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lang-btn.active {
+  background: var(--accent-gradient);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.25);
 }
 
 .nav-brand {

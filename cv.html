@@ -13,13 +13,17 @@
     <div class="container">
       <a href="index.html" class="nav-brand">Kamil</a>
       <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="portofolio.html">Portfolio</a></li>
-        <li><a href="cv.html">CV</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="portofolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+        <li><a href="cv.html" data-i18n="nav.cv">CV</a></li>
       </ul>
-      <div class="hamburger">
+      <div class="lang-switch" aria-label="Language switcher">
+        <button class="lang-btn active" data-lang="id" type="button">ID</button>
+        <button class="lang-btn" data-lang="en" type="button">EN</button>
+      </div>
+      <div class="hamburger" aria-label="Open menu">
         <span></span>
         <span></span>
         <span></span>
@@ -32,51 +36,51 @@
     <div class="cv-container">
       <!-- Header -->
       <div class="cv-header">
-        <img src="https://i.ibb.co.com/vxZS2JZN/Whats-App-Image-2026-04-15-at-09-50-17.jpg" alt="Fedya Jalilah Kamil Winola" class="profile-img">
+        <img src="https://i.ibb.co.com/Y7mCXqMb/Screenshot-2026-09-27-215246.png" alt="Fedya Jalilah Kamil Winola" class="profile-img">
         <h1>Fedya Jalilah Kamil Winola</h1>
-        <p style="font-size: 1.1rem; color: var(--primary-light); margin-bottom: 10px;"><strong>Panggilan: Kamil</strong></p>
-        <p style="color: var(--text-gray); margin-bottom: 5px;">Semarang, Jawa Tengah</p>
-        <p style="color: var(--text-gray); font-size: 0.95rem;">Pelajar SMK | Jurusan SIJA | Minat: Web Development & UI/UX</p>
+        <p style="font-size: 1.1rem; color: var(--primary-light); margin-bottom: 10px;"><strong><span data-i18n="cv.call">Panggilan:</span> Kamil</strong></p>
+        <p style="color: var(--text-gray); margin-bottom: 5px;" data-i18n="cv.location">Semarang, Central Java</p>
+        <p style="color: var(--text-gray); font-size: 0.95rem;" data-i18n="cv.summary">Pelajar SMK | Jurusan SIJA | Minat: Web Development & UI/UX</p>
       </div>
 
       <!-- Data Pribadi -->
       <div class="cv-section">
-        <h2 class="cv-section-title">📋 Data Pribadi</h2>
+        <h2 class="cv-section-title" data-i18n="cv.personal">📋 Data Pribadi</h2>
         <div class="cv-data-grid">
           <div class="cv-data-column">
             <div class="cv-item">
-              <h4>Nama Lengkap</h4>
+              <h4 data-i18n="cv.fullName">Nama Lengkap</h4>
               <p>Fedya Jalilah Kamil Winola</p>
             </div>
             <div class="cv-item">
-              <h4>Nama Panggilan</h4>
+              <h4 data-i18n="cv.nicknameLabel">Nama Panggilan</h4>
               <p>Kamil</p>
             </div>
             <div class="cv-item">
-              <h4>Tempat, Tanggal Lahir</h4>
-              <p>Semarang, 27 Januari 2009</p>
+              <h4 data-i18n="cv.birthDate">Tempat, Tanggal Lahir</h4>
+              <p>Semarang, 27 January 2009</p>
             </div>
             <div class="cv-item">
-              <h4>Agama</h4>
+              <h4 data-i18n="cv.religion">Agama</h4>
               <p>Islam</p>
             </div>
           </div>
           <div class="cv-data-column">
             <div class="cv-item">
-              <h4>Alamat / Domisili</h4>
+              <h4 data-i18n="cv.address">Alamat / Domisili</h4>
               <p>Jl. Lempongsari Barat IV, Semarang</p>
             </div>
             <div class="cv-item">
-              <h4>Sekolah</h4>
+              <h4 data-i18n="cv.school">Sekolah</h4>
               <p>SMKN 7 Semarang</p>
             </div>
             <div class="cv-item">
-              <h4>Jurusan</h4>
-              <p>Sistem Informasi, Jaringan Aplikasi (SIJA)</p>
+              <h4 data-i18n="cv.major">Jurusan</h4>
+              <p>Information Systems, Network Application (SIJA)</p>
             </div>
             <div class="cv-item">
-              <h4>Status</h4>
-              <p>Pelajar Aktif</p>
+              <h4 data-i18n="cv.status">Status</h4>
+              <p>Active Student</p>
             </div>
           </div>
         </div>
@@ -84,67 +88,71 @@
 
       <!-- Pendidikan -->
       <div class="cv-section">
-        <h2 class="cv-section-title">🎓 Riwayat Pendidikan</h2>
+        <h2 class="cv-section-title" data-i18n="cv.education">🎓 Riwayat Pendidikan</h2>
         <div class="cv-item">
           <h4>SDN Bendungan Semarang</h4>
-          <p>Tamat Tahun 2022</p>
+          <p data-i18n="cv.grad1">Tamat Tahun 2022</p>
         </div>
         <div class="cv-item">
           <h4>SMPN 10 Semarang</h4>
-          <p>Tamat Tahun 2024</p>
+          <p data-i18n="cv.grad2">Tamat Tahun 2024</p>
         </div>
         <div class="cv-item">
-          <h4>SMKN 7 Semarang - Jurusan SIJA</h4>
-          <p>Sedang Menempuh (Tahun 2024 - 2026)</p>
+          <h4>SMKN 7 Semarang - SIJA Major</h4>
+          <p data-i18n="cv.grad3">Sedang Menempuh (Tahun 2024 - 2026)</p>
         </div>
       </div>
 
       <!-- Pengalaman -->
       <div class="cv-section">
-        <h2 class="cv-section-title">💼 Pengalaman</h2>
+        <h2 class="cv-section-title" data-i18n="cv.experience">💼 Pengalaman</h2>
         <div class="cv-item">
-          <h4>Praktik Cisco Packet Tracer Dan Router</h4>
-          <p>Menguasai simulasi jaringan dan konfigurasi perangkat networking menggunakan Cisco Packet Tracer</p>
+          <h4 data-i18n="cv.exp1Title">Praktik Cisco Packet Tracer Dan Router</h4>
+          <p data-i18n="cv.exp1Text">Menguasai simulasi jaringan dan konfigurasi perangkat networking menggunakan Cisco Packet Tracer</p>
         </div>
         <div class="cv-item">
-          <h4>Membuat Website HTML/CSS</h4>
-          <p>Pengalaman membuat website responsif dan modern menggunakan HTML dan CSS dengan fokus pada user experience</p>
+          <h4 data-i18n="cv.exp2Title">Membuat Website HTML/CSS</h4>
+          <p data-i18n="cv.exp2Text">Pengalaman membuat website responsif dan modern menggunakan HTML dan CSS dengan fokus pada user experience</p>
         </div>
         <div class="cv-item">
-          <h4>Desain Grafis - Canva & Figma</h4>
-          <p>Membuat desain visual yang menarik dan profesional menggunakan Canva dan Figma untuk berbagai kebutuhan</p>
+          <h4 data-i18n="cv.exp3Title">Desain Grafis - Canva & Figma</h4>
+          <p data-i18n="cv.exp3Text">Membuat desain visual yang menarik dan profesional menggunakan Canva dan Figma untuk berbagai kebutuhan</p>
+        </div>
+        <div class="cv-item">
+          <h4>Canva Design Project</h4>
+          <p>Membuat desain promo dan mockup visual untuk proyek UKS STEMBASE menggunakan Canva. <a href="https://canva.link/mjpgs8p5to0rkq5" target="_blank" style="color: var(--primary-dark); font-weight: 600;">Lihat desain</a></p>
         </div>
         <div class="cv-item">
           <h4>JavaScript Programming</h4>
-          <p>Mengembangkan interaktivitas website dengan JavaScript dasar </p>
+          <p data-i18n="cv.exp4Text">Mengembangkan interaktivitas website dengan JavaScript dasar</p>
         </div>
       </div>
 
       <!-- Skills -->
       <div class="cv-section">
-        <h2 class="cv-section-title">⚙️ Keterampilan</h2>
+        <h2 class="cv-section-title" data-i18n="cv.skills">⚙️ Keterampilan</h2>
         <div class="cv-item">
-          <h4>Technical Skills</h4>
-          <p>HTML, CSS, JavaScript, Cisco Packet Tracer, Web Design, Simulasi Jaringan</p>
+          <h4 data-i18n="cv.techSkills">Technical Skills</h4>
+          <p>HTML, CSS, JavaScript, Cisco Packet Tracer, Web Design, Network Simulation</p>
         </div>
         <div class="cv-item">
-          <h4>Design Skills</h4>
+          <h4 data-i18n="cv.designSkillsTitle">Design Skills</h4>
           <p>Figma, Canva, UI/UX Design Principles, Graphic Design, Adobe Illustrator</p>
         </div>
         <div class="cv-item">
-          <h4>Soft Skills</h4>
-          <p>Komunikasi Efektif, Teamwork, Creative Thinking</p>
+          <h4 data-i18n="cv.softSkillsTitle">Soft Skills</h4>
+          <p data-i18n="cv.softSkillsText">Komunikasi Efektif, Teamwork, Creative Thinking</p>
         </div>
       </div>
 
       <!-- Quote -->
-      <div class="cv-quote">
-        "Belajar hari ini, berkembang esok hari, dan sukses di masa depan."
+      <div class="cv-quote" data-i18n="cv.quote">
+        Belajar hari ini, berkembang esok hari, dan sukses di masa depan.
       </div>
 
       <!-- Contact Section -->
       <div class="cv-section">
-        <h2 class="cv-section-title">📱 Kontak</h2>
+        <h2 class="cv-section-title" data-i18n="cv.contact">📱 Kontak</h2>
         <div class="contact-grid">
           <a href="https://www.instagram.com/kamelloow?igsh=MTk0eGV6OWMxZWJvaQ==" target="_blank" class="contact-card">
             <div class="contact-icon">📷</div>
@@ -168,8 +176,8 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 2026 Fedya Jalilah Kamil Winola. Semua hak dilindungi.</p>
-      <p>Desain oleh Kamil.</p>
+      <p data-i18n="footer.copy">© 2026 Fedya Jalilah Kamil Winola. Semua hak dilindungi.</p>
+      <p data-i18n="footer.design">Desain oleh Kamil.</p>
     </div>
   </footer>
 

@@ -13,13 +13,17 @@
     <div class="container">
       <a href="index.html" class="nav-brand">Kamil</a>
       <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="portofolio.html">Portfolio</a></li>
-        <li><a href="cv.html">CV</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="portofolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+        <li><a href="cv.html" data-i18n="nav.cv">CV</a></li>
       </ul>
-      <div class="hamburger">
+      <div class="lang-switch" aria-label="Language switcher">
+        <button class="lang-btn active" data-lang="id" type="button">ID</button>
+        <button class="lang-btn" data-lang="en" type="button">EN</button>
+      </div>
+      <div class="hamburger" aria-label="Open menu">
         <span></span>
         <span></span>
         <span></span>
@@ -38,7 +42,7 @@
   <!-- ==================== BAGIAN PORTOFOLIO ==================== -->
   <section class="section">
     <div class="container">
-      <h1 class="page-title">Portfolio & Proyek</h1>
+      <h1 class="page-title" data-i18n="portfolio.title">Portfolio & Proyek</h1>
       
       <!-- Projects Grid -->
       <div class="portfolio-grid">
@@ -47,8 +51,8 @@
           <img src="https://i.ibb.co.com/Y7JnLZhM/Screenshot-2026-05-06-100205.png" alt="Website Pakaiin" class="portfolio-card-img" style="cursor: pointer;">
           <div class="portfolio-card-content">
             <h3>Website Pakaiin</h3>
-            <p>Sebuah website e-commerce yang dirancang untuk memudahkan pencarian dan pembelian pakaian dengan interface yang user-friendly dan responsive design.</p>
-            <a href="https://pakaiin.vercel.app/" target="_blank" class="portfolio-link">Kunjungi Website →</a>
+            <p data-i18n="portfolio.project1Text">Sebuah website e-commerce yang dirancang untuk memudahkan pencarian dan pembelian pakaian dengan interface yang user-friendly dan responsive design.</p>
+            <a href="https://pakaiin.vercel.app/" target="_blank" class="portfolio-link" data-i18n="portfolio.visitWebsite">Kunjungi Website →</a>
           </div>
         </div>
 
@@ -57,8 +61,8 @@
           <img src="https://i.ibb.co.com/QFGtmhpQ/Screenshot-2026-05-06-100148.png" alt="S.id Shop" class="portfolio-card-img" style="cursor: pointer;">
           <div class="portfolio-card-content">
             <h3>S.id Shop</h3>
-            <p>Platform toko online yang menyediakan berbagai produk pilihan dengan sistem pembayaran yang aman dan pengiriman terpercaya ke seluruh Indonesia.</p>
-            <a href="https://s.id/kloveshop_" target="_blank" class="portfolio-link">Kunjungi Website →</a>
+            <p data-i18n="portfolio.project2Text">Platform toko online yang menyediakan berbagai produk pilihan dengan sistem pembayaran yang aman dan pengiriman terpercaya ke seluruh Indonesia.</p>
+            <a href="https://s.id/kloveshop_" target="_blank" class="portfolio-link" data-i18n="portfolio.visitWebsite">Kunjungi Website →</a>
           </div>
         </div>
 
@@ -66,16 +70,54 @@
         <div class="portfolio-card">
           <img src="https://i.ibb.co.com/R4C3ygpR/Screenshot-2026-05-06-121348.png" alt="Figma Mockup" class="portfolio-card-img" style="cursor: pointer;">
           <div class="portfolio-card-content">
-            <h3>Figma Mockup</h3>
-            <p>Desain mockup UI/UX dibuat di Figma, menunjukkan tampilan halaman proyek dengan estetika modern dan profesional.</p>
-            <a href="https://www.figma.com/design/phS67i9pFNfaR6TY5LdIq5/Mockup-Kelompok-4?node-id=0-1&p=f&t=VoAWxm8LVjXfpRgM-0" target="_blank" class="portfolio-link">Lihat di Figma →</a>
+            <h3>Figma Mockup Pakai.in</h3>
+            <p data-i18n="portfolio.project3Text">Desain mockup UI/UX dibuat di Figma, menunjukkan tampilan halaman proyek dengan estetika modern dan profesional.</p>
+            <a href="https://www.figma.com/design/phS67i9pFNfaR6TY5LdIq5/Mockup-Kelompok-4?node-id=0-1&p=f&t=VoAWxm8LVjXfpRgM-0" target="_blank" class="portfolio-link" data-i18n="portfolio.viewFigma">Lihat di Figma →</a>
+          </div>
+        </div>
+
+        <!-- Project 4: Figma Mockup UKS STEMBASE -->
+        <div class="portfolio-card">
+          <a href="https://ibb.co/ZRLznbxT" target="_blank" aria-label="Open Figma mockup UKS STEMBASE">
+            <img src="https://i.ibb.co.com/HLFTW9qg/Screenshot-2026-09-27-193105.png" alt="Figma Mockup UKS STEMBASE" class="portfolio-card-img" style="cursor: pointer;">
+          </a>
+          <div class="portfolio-card-content">
+            <h3>Figma Mockup UKS STEMBASE</h3>
+            <p data-i18n="portfolio.project3Text">Desain mockup UI/UX dibuat di Figma, menunjukkan tampilan halaman proyek dengan estetika modern dan profesional.</p>
+            <a href="https://www.figma.com/design/KoYaFifbFR8EVDgWG8ANcQ/Untitled?node-id=0-1&p=f&t=gFUez6AnYVHdO9bO-0" target="_blank" class="portfolio-link" data-i18n="portfolio.viewFigma">Lihat di Figma →</a>
+          </div>
+        </div>
+
+        <!-- Project 5: Canva Design -->
+        <div class="portfolio-card">
+          <a href="https://canva.link/mjpgs8p5to0rkq5" target="_blank" aria-label="Open Canva design project">
+            <div style="background: linear-gradient(135deg, #a78bfa 0%, #ec4899 100%); min-height: 220px; border-radius: 18px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 700; text-align: center; padding: 20px;">
+              Canva Design<br>CV English
+            </div>
+          </a>
+          <div class="portfolio-card-content">
+            <h3>Canva Design CV English</h3>
+            <p data-i18n="portfolio.project3Text">Desain visual dibuat menggunakan Canva untuk kebutuhan presentasi dan branding</p>
+            <a href="https://canva.link/mjpgs8p5to0rkq5" target="_blank" class="portfolio-link">Lihat Desain Canva →</a>
+          </div>
+        </div>
+
+        <!-- Project 6: Canva Wireframe UKS STEMBASE -->
+        <div class="portfolio-card">
+          <a href="https://canva.link/y8metfp8alt9tus" target="_blank" aria-label="Open Canva wireframe UKS STEMBASE">
+            <img src="img/img3.png" alt="Design Canva Wireframe UKS STEMBASE" class="portfolio-card-img" style="cursor: pointer;">
+          </a>
+          <div class="portfolio-card-content">
+            <h3 data-i18n="portfolio.wireframeTitle">Design Canva Wireframe UKS STEMBASE</h3>
+            <p data-i18n="portfolio.wireframeText">Wireframe desain UKS STEMBASE dibuat menggunakan Canva.</p>
+            <a href="https://canva.link/y8metfp8alt9tus" target="_blank" class="portfolio-link" data-i18n="portfolio.viewCanva">Lihat Desain Canva →</a>
           </div>
         </div>
       </div>
 
       <!-- Certificate Section -->
       <div class="certificate-section">
-        <h2 class="certificate-title">Sertifikat & Penghargaan</h2>
+        <h2 class="certificate-title" data-i18n="portfolio.certificates">Sertifikat & Penghargaan</h2>
         
         <div class="certificate-grid">
           <!-- Certificate 1 -->
@@ -93,6 +135,26 @@
               <h3>Hour of Code</h3>
             </div>
           </div>
+
+          <!-- Certificate 3 -->
+          <div class="certificate-card">
+            <a href="file:///D:/SERTIF_SENPAH-OYABDH.pdf" target="_blank" aria-label="Open SENPAH certificate">
+              <img src="img/img1.png" alt="SENPAH Certificate" class="certificate-image" style="cursor: pointer;">
+            </a>
+            <div class="certificate-card-content">
+              <h3>SENPAH Certificate</h3>
+            </div>
+          </div>
+
+          <!-- Certificate 4 -->
+          <div class="certificate-card">
+            <a href="file:///D:/Fedya%20Jalilah%20Kamil%20Winola_Java_Fundamentals_Sertifikat.pdf" target="_blank" aria-label="Open Oracle Academy Java Fundamentals certificate">
+              <img src="img/img4.png" alt="Oracle Academy Java Fundamentals Certificate" class="certificate-image" style="cursor: pointer;">
+            </a>
+            <div class="certificate-card-content">
+              <h3>Oracle Academy - Java Fundamentals</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -100,8 +162,8 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 2026 Fedya Jalilah Kamil Winola. Semua hak dilindungi.</p>
-      <p>Desain oleh Kamil.</p>
+      <p data-i18n="footer.copy">© 2026 Fedya Jalilah Kamil Winola. Semua hak dilindungi.</p>
+      <p data-i18n="footer.design">Desain oleh Kamil.</p>
     </div>
   </footer>
 

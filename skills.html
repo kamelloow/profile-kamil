@@ -13,13 +13,17 @@
     <div class="container">
       <a href="index.html" class="nav-brand">Kamil</a>
       <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="portofolio.html">Portfolio</a></li>
-        <li><a href="cv.html">CV</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="portofolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+        <li><a href="cv.html" data-i18n="nav.cv">CV</a></li>
       </ul>
-      <div class="hamburger">
+      <div class="lang-switch" aria-label="Language switcher">
+        <button class="lang-btn active" data-lang="id" type="button">ID</button>
+        <button class="lang-btn" data-lang="en" type="button">EN</button>
+      </div>
+      <div class="hamburger" aria-label="Open menu">
         <span></span>
         <span></span>
         <span></span>
@@ -31,7 +35,7 @@
   <section class="section">
     <div class="container">
       <div style="max-width: 700px; margin: 0 auto; width: 100%;">
-        <h1 class="page-title">Skill & Kompetensi</h1>
+        <h1 class="page-title" data-i18n="skills.title">Skill & Kompetensi</h1>
         
         <div class="card">
           <!-- HTML -->
